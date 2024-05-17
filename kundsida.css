@@ -1,0 +1,103 @@
+:root {
+    --primary: #958f6d;
+    --secondary: #bcc4ae;
+    --accent: #98ab8c;
+    --background: #fafaf9;
+    --text: #0c0b09;
+}
+
+body {
+    background-color: var(--background);
+    margin: 0;
+    padding: 0;
+}
+
+.sida{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2dvh;
+    gap: 1dvh;
+    margin-top: 5dvh;
+    gap: 10dvh;
+}
+
+.skapaticket,
+.tickets {
+    width: 50dvh;
+    background-color: var(--secondary);
+    border: 1px solid var(--accent);
+    border-radius: 0.5dvh;
+    padding: 2dvh;
+    overflow-y: auto;   
+}
+
+.skapaticket h3,
+.tickets h3 {
+    font-size: 2.5dvh;
+}
+
+.ticket {
+    margin-bottom: 2dvh;
+    padding: 2dvh;
+    background-color: var(--background);
+    border: 0.1dvh solid var(--accent);
+    border-radius: 1dvh;
+}
+.ticket p{
+    padding: 0;
+}
+
+
+h1{
+    text-align: center;
+    margin: 10dvh;
+}
+
+.button {
+    background-color: var(--primary);
+    border: none;
+    color: #fff;
+    padding: 1.5dvh 2dvh;
+    border-radius: 0.3dvh;
+    cursor: pointer;
+    font-size: 2dvh;
+    margin-top: 1dvh;
+}
+
+.button:hover {
+    background-color: #7d775b;
+}
+
+/* hemknapp */
+.hem{
+    position: absolute;
+    left:1dvh;
+    top:1dvh;
+    background-color: var(--primary);
+    border: none;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.hem:hover{
+    background-color: #7d775b;
+}
+
+/*telefon anpassning*/
+
+
+@media only screen and (max-width: 500px) {
+    .sida {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .skapaticket, .tickets {
+        width: 80%;
+        margin-bottom: 10dvh;
+    }
+}
